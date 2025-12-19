@@ -219,56 +219,43 @@
         </div>
     </section>
 
-    <!-- GALERÍA LIGHTBOX -->
-    <section id="galeria" class="container py-5 my-5">
-        <div class="text-center mb-5">
-            <h2 class="section-title">Nuestras Instalaciones</h2>
-            <p class="section-subtitle">Conocé nuestro espacio de entrenamiento</p>
-        </div>
-        <div class="gallery-grid">
-            <div class="gallery-item" data-index="0">
-                <img src="assets/img/Galeria/Gym 1.jpg" alt="Gimnasio El Caverna 1" loading="lazy">
-                <div class="gallery-overlay">
-                    <i class="bi bi-zoom-in"></i>
-                </div>
-            </div>
-            <div class="gallery-item" data-index="1">
-                <img src="assets/img/Galeria/Gym 2.jpg" alt="Gimnasio El Caverna 2" loading="lazy">
-                <div class="gallery-overlay">
-                    <i class="bi bi-zoom-in"></i>
-                </div>
-            </div>
-            <div class="gallery-item" data-index="2">
-                <img src="assets/img/Galeria/Gym 3.webp" alt="Gimnasio El Caverna 3" loading="lazy">
-                <div class="gallery-overlay">
-                    <i class="bi bi-zoom-in"></i>
-                </div>
-            </div>
-            <div class="gallery-item" data-index="3">
-                <img src="assets/img/Galeria/Gym 4.webp" alt="Gimnasio El Caverna 4" loading="lazy">
-                <div class="gallery-overlay">
-                    <i class="bi bi-zoom-in"></i>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- MODAL LIGHTBOX -->
-    <div id="lightboxModal" class="lightbox-modal">
-        <button class="lightbox-close" aria-label="Cerrar galería">&times;</button>
-        <button class="lightbox-prev" aria-label="Imagen anterior">
-            <i class="bi bi-chevron-left"></i>
-        </button>
-        <button class="lightbox-next" aria-label="Imagen siguiente">
-            <i class="bi bi-chevron-right"></i>
-        </button>
-        <div class="lightbox-content">
-            <img id="lightboxImage" src="" alt="">
-            <div class="lightbox-counter">
-                <span id="lightboxCounter">1 / 4</span>
-            </div>
-        </div>
+    <!-- GALERÍA CARRUSEL -->
+<section id="galeria" class="container py-5 my-5">
+    <div class="text-center mb-5">
+        <h2 class="section-title">Galería</h2>
+        <p class="section-subtitle">Conocé nuestro equipo y actividades en acción</p>
     </div>
+    <div id="galeriaCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#galeriaCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#galeriaCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#galeriaCarousel" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#galeriaCarousel" data-bs-slide-to="3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/img/Galeria/Gym 1.jpg" class="d-block w-100 carousel-img" alt="El Caverna Gym - Galería 1" loading="lazy">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/Galeria/Gym 2.jpg" class="d-block w-100 carousel-img" alt="El Caverna Gym - Galería 2" loading="lazy">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/Galeria/Gym 3.webp" class="d-block w-100 carousel-img" alt="El Caverna Gym - Galería 3" loading="lazy">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/Galeria/Gym 4.webp" class="d-block w-100 carousel-img" alt="El Caverna Gym - Galería 4" loading="lazy">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#galeriaCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#galeriaCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+</section>
 
     <!-- TESTIMONIOS CARRUSEL MEJORADO -->
     <section id="testimonios" class="py-5 bg-light-section">

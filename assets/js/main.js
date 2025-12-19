@@ -36,9 +36,6 @@ function inicializarApp() {
     // 4. Inicializar contador de estadísticas
     AnimationManager.inicializarContador();
     
-    // 5. Inicializar lightbox de galería
-    UI.inicializarLightbox();
-    
     console.log('✅ Aplicación inicializada correctamente');
   } catch (error) {
     console.error('❌ Error al inicializar:', error);
